@@ -10,38 +10,50 @@ body {
     background-color: #cacccf;
     color: #2e3d49;
     line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Consistent section styling */
+section {
+    padding: 3rem 0; /* Consistent padding between sections */
+    margin: 0 auto;
+    max-width: 1200px; /* Ensure consistent section width */
 }
 
 /* Navigation Styles */
 nav {
     background-color: rgba(31, 41, 51, 1);
-    padding: 1rem 0;
+    padding: 1rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensures the nav stays above all other sections */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow to distinguish it */
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 3rem;
+    padding: 0;
     align-items: center;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    flex: 1 1 33.33%;
+    margin: 0.5rem 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -49,24 +61,25 @@ nav ul li a:hover {
 }
 
 #language-selector {
+    margin-top: 1rem;
     background-color: #fff;
     color: #333;
     padding: 0.5rem;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    width: 100%;
 }
 
 /* Add padding to the top of sections to compensate for the fixed nav bar */
 header, #home, #skills, #projects, #certifications, #education, #contact {
-    padding-top: 100px; /* Adjust this value based on your nav bar's height */
+    padding-top: 120px;
 }
 
-Header Section */
 header {
     color: #fff;
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,30 +87,26 @@ header {
 }
 
 #home {
-    color: #080808;
-    text-align: center;
-    padding: 5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#home h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    color: #1f2933;
+    padding: 6rem 1rem 0rem 1rem;
     text-align: center;
 }
 
+#home h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
 #home p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 #home a {
     background-color: #2e3d49;
     color: white;
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-size: 1rem;
     text-decoration: none;
@@ -108,18 +117,25 @@ header {
     background-color: #2d9cdb;
 }
 
+#home iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    height: 300px;
+    width: 100%;
+}
 /* Skills Section */
 #skills {
     background-color: #cacccf;
-    padding: 4rem 2rem;
+    padding: 3rem 1rem 0rem 1rem;
     text-align: center;
 }
 
 #skills h2 {
     color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    position: relative;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #skills h2::after {
@@ -132,23 +148,17 @@ header {
 }
 
 .skills-container {
-    max-width: 800px;
-    padding: 2rem 2rem;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    padding: 1.5rem;
+    text-align: left;
 }
 
 .skills-container h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #2e3d49;
-    text-align: left;
 }
 
 .skills-container ul {
@@ -158,10 +168,9 @@ header {
 
 .skills-container li {
     margin: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 1rem;
     position: relative;
-    text-align: left;
 }
 
 .skills-container li::before {
@@ -176,71 +185,57 @@ header {
 /* Projects Section */
 #projects {
     background-color: #cacccf;
-    padding: 4rem 2rem;
+    padding: 3rem 1rem 0rem 1rem;
     text-align: center;
 }
 
 #projects h2 {
     color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    position: relative;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #projects ul {
-    max-width: 800px;
-    padding: 2rem 2rem;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    padding: 1.5rem 2.5rem;
+    text-align: left;
 }
 
-
-
-
-/* Certifications Section */
-#certifications ul, #education ul{
-    max-width: 800px;
-    padding: 2rem 2rem;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+#certifications, #education {
+    background-color: #cacccf;
+    padding: 3rem 1rem 0rem 1rem;
+    text-align: center;
+}
+    
+/* Certifications & Education Sections */
+#certifications ul, #education ul {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    padding: 1.5rem 2.5rem;
+    text-align: left;
 }
 
 #certifications h2, #education h2 {
     color: #333;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
-    margin-bottom: 2rem;
-    position: relative;
 }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #2e3d49;
-    margin: 1rem auto;
-}
-
+/* Footer */
 footer {
     background-color: #1f2933;
     color: white;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
     text-align: center;
 }
-
+#contact {
+    padding: 2rem;
+}
 footer a {
     color: #56ccf2;
     text-decoration: none;
@@ -250,36 +245,32 @@ footer a:hover {
     color: #2d9cdb;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-header, #skills, #projects, #certifications, #education, #contact {
-    animation: fadeIn 1.5s ease-in;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* Media Queries for Tablets and Larger Screens */
+@media (min-width: 768px) {
     header {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
+    }
+    #home iframe {
+        height: 500px;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    header h1 {
-        font-size: 2.5rem;
+    nav ul li {
+        flex: none;
+        margin: 0 15px;
+    }
+
+    #language-selector {
+        margin-top: 0;
+        width: auto;
+    }
+
+    /* Adjust max-width for consistency across sections */
+    section {
+        padding: 4rem 2rem;
+        max-width: 1000px;
     }
 }
