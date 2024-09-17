@@ -195,6 +195,15 @@ header {
     margin-bottom: 1.5rem;
 }
 
+#projects h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2e3d49;
+    margin: 1rem auto;
+}
+
 #projects ul {
     background-color: #fff;
     border-radius: 10px;
@@ -225,6 +234,14 @@ header {
     text-align: center;
 }
 
+#certifications h2::after, #education h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2e3d49;
+    margin: 1rem auto;
+}
 /* Footer */
 footer {
     background-color: #1f2933;
