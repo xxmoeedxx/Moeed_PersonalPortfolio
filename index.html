@@ -8,65 +8,56 @@
     <title>Moeed Ahmad | Professional Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <select id="language-selector">
-                        <option value="en">English</option>
-                        <option value="ur">اردو</option>
-                        <option value="fr">Français</option>
-                        <option value="ar">العربية</option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Navigation Bar with Language Selector -->
+    <nav>
+        <ul>
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#skills" id="skills-link">Skills</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
+            <li><a href="#certifications" id="certifications-link">Certifications</a></li>
+            <li><a href="#education" id="education-link">Education</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+            <li>
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="ur">اردو</option>
+                    <option value="fr">Français</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Section to be translated -->
     <section id="home">
-        <h1>Moeed Ahmad</h1>
-        <p>Computer Scientist | Software Engineer | Teaching Assistant</p>
-        <p><a href="https://linkedin.com/in/xxmoeedxx" target="_blank">LinkedIn</a> | <a href="https://github.com/xxmoeedxx" target="_blank">GitHub</a></p>
-        <video controls width="500">
-            <source src="intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <h1 id="welcome-message">Moeed Ahmad</h1>
+        <p id="description">Computer Scientist | Software Engineer | Teaching Assistant</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 id="skills-title">Skills</h2>
         <div class="skills-container">
-            <div class="skill">
-                <h3>Hard Skills</h3>
-                <ul>
-                    <li>C++, Python, Flutter</li>
-                    <li>React, Node.js, MySQL, Firebase</li>
-                    <li>PostgreSQL, Azure Data Factory, Power BI</li>
-                    <li>Git, Big Query</li>
-                </ul>
-            </div>
-            <div class="skill">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Teamwork, Leadership</li>
-                    <li>Time Management, Critical Thinking</li>
-                    <li>Effective Communication, Problem Solving</li>
-                </ul>
-            </div>
+            <h3>Hard Skills</h3>
+            <ul>
+                <li>C++, Python, Flutter</li>
+                <li>React, Node.js, MySQL, Firebase</li>
+                <li>PostgreSQL, Azure Data Factory, Power BI</li>
+                <li>Git, Big Query</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Teamwork, Leadership</li>
+                <li>Time Management, Critical Thinking</li>
+                <li>Effective Communication, Problem Solving</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 id="projects-title">Projects</h2>
         <ul>
             <li>Hostels Hub - Hostel Finder and Manager App (May 2023)</li>
             <li>Geospatial Crime Analysis and Safest Route Optimization for Atlanta (May - Jun 2024)</li>
@@ -75,7 +66,7 @@
     </section>
 
     <section id="certifications">
-        <h2>Certifications & Awards</h2>
+        <h2 id="certifications-title">Certifications & Awards</h2>
         <ul>
             <li>Introduction to Ethical Hacking by Great Learning</li>
             <li>Participation in Intra-University Programming Competition</li>
@@ -84,7 +75,7 @@
     </section>
 
     <section id="education">
-        <h2>Education</h2>
+        <h2 id="education-title">Education</h2>
         <ul>
             <li>Bachelors in Computer Science, Information Technology University (Present)</li>
             <li>Intermediate, Government College University (Aug 2021)</li>
@@ -93,7 +84,7 @@
     </section>
 
     <footer id="contact">
-        <h2>Contact</h2>
+        <h2 id="contact-title">Contact</h2>
         <p>Email: <a href="mailto:moeedahmed254@gmail.com">moeedahmed254@gmail.com</a></p>
         <p>Phone: (+92) 302 4238667</p>
         <p>Socials: 
@@ -102,6 +93,8 @@
         </p>
     </footer>
 
-    <script src="scripts.js"></script>
+    
+    <!-- Include the translator JavaScript -->
+    <script src="translator.js"></script>
 </body>
 </html>
