@@ -1,0 +1,285 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cacccf;
+    color: #2e3d49;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(31, 41, 51, 1);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the nav stays above all other sections */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow to distinguish it */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #56ccf2;
+}
+
+#language-selector {
+    background-color: #fff;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Add padding to the top of sections to compensate for the fixed nav bar */
+header, #home, #skills, #projects, #certifications, #education, #contact {
+    padding-top: 100px; /* Adjust this value based on your nav bar's height */
+}
+
+Header Section */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    color: #080808;
+    text-align: center;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#home a {
+    background-color: #2e3d49;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#home a:hover {
+    background-color: #2d9cdb;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #cacccf;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#skills h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2e3d49;
+    margin: 1rem auto;
+}
+
+.skills-container {
+    max-width: 800px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.skills-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2e3d49;
+    text-align: left;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    position: relative;
+    text-align: left;
+}
+
+.skills-container li::before {
+    content: '•';
+    color: #2e3d49;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #cacccf;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#projects ul {
+    max-width: 800px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* Certifications Section */
+#certifications ul, #education ul{
+    max-width: 800px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#certifications h2, #education h2 {
+    color: #333;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2e3d49;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: #1f2933;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #56ccf2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2d9cdb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, #skills, #projects, #certifications, #education, #contact {
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
