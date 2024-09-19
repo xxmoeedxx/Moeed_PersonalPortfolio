@@ -90,6 +90,8 @@ header {
     color: #1f2933;
     padding: 15rem 1rem 0rem 1rem;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #home h1 {
