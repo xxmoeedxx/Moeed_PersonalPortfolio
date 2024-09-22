@@ -10,91 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navigation Bar with Language Selector -->
     <nav>
-        <ul>
-            <li><a href="#home" id="home-link">Home</a></li>
-            <li><a href="#skills" id="skills-link">Skills</a></li>
-            <li><a href="#projects" id="projects-link">Projects</a></li>
-            <li><a href="#certifications" id="certifications-link">Certifications</a></li>
-            <li><a href="#education" id="education-link">Education</a></li>
-            <li><a href="#contact" id="contact-link">Contact</a></li>
-            <li>
-                <select id="language-selector">
-                    <option value="en">English</option>
-                    <option value="ur">اردو</option>
-                    <option value="fr">Français</option>
-                    <option value="ar">العربية</option>
-                </select>
-            </li>
+        <ul id="nav-list">
+            <!-- Navigation items will be populated here -->
         </ul>
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="ur">اردو</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+        </select>
     </nav>
 
-    <!-- Section to be translated -->
     <section id="home">
-        <h1 id="welcome-message">Moeed Ahmad</h1>
-        <p id="description">Computer Scientist | Software Engineer | Teaching Assistant</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcMQvTKh8Rg?si=f6XmwGjl6iJcZPXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <h1 id="welcome-message"></h1>
+        <p id="description"></p>
+        <iframe id="youtube-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
+    
     <section id="skills">
         <h2 id="skills-title">Skills</h2>
         <div class="skills-container">
             <h3>Hard Skills</h3>
-            <ul>
-                <li>C++, Python, Flutter</li>
-                <li>React, Node.js, MySQL, Firebase</li>
-                <li>PostgreSQL, Azure Data Factory, Power BI</li>
-                <li>Git, Big Query</li>
+            <ul id="hard-skills-list">
+                <!-- Hard skills will be populated here -->
             </ul>
             <h3>Soft Skills</h3>
-            <ul>
-                <li>Teamwork, Leadership</li>
-                <li>Time Management, Critical Thinking</li>
-                <li>Effective Communication, Problem Solving</li>
+            <ul id="soft-skills-list">
+                <!-- Soft skills will be populated here -->
             </ul>
         </div>
     </section>
 
     <section id="projects">
         <h2 id="projects-title">Projects</h2>
-        <ul>
-            <li>Hostels Hub - Hostel Finder and Manager App (May 2023)</li>
-            <li>Geospatial Crime Analysis and Safest Route Optimization for Atlanta (May - Jun 2024)</li>
-            <li>YouTube Trending Data Analysis In Different Regions (May 2024)</li>
+        <ul id="projects-list">
+            <!-- Projects will be populated here -->
         </ul>
     </section>
 
     <section id="certifications">
         <h2 id="certifications-title">Certifications & Awards</h2>
-        <ul>
-            <li>Introduction to Ethical Hacking by Great Learning</li>
-            <li>Participation in Intra-University Programming Competition</li>
-            <li>Participation in SOFTEC Programming Competition</li>
+        <ul id="certifications-list">
+            <!-- Certifications will be populated here -->
         </ul>
     </section>
 
     <section id="education">
         <h2 id="education-title">Education</h2>
-        <ul>
-            <li>Bachelors in Computer Science, Information Technology University (Present)</li>
-            <li>Intermediate, Government College University (Aug 2021)</li>
-            <li>Matriculation, Divisional Public School (Aug 2019)</li>
+        <ul id="education-list">
+            <!-- Education will be populated here -->
         </ul>
     </section>
 
     <footer id="contact">
         <h2 id="contact-title">Contact</h2>
-        <p>Email: <a href="mailto:moeedahmed254@gmail.com">moeedahmed254@gmail.com</a></p>
-        <p>Phone: (+92) 302 4238667</p>
+        <p>Email: <a id="email" href=""></a></p>
+        <p>Phone: <span id="phone"></span></p>
         <p>Socials: 
-            <a href="https://linkedin.com/in/xxmoeedxx" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/xxmoeedxx" target="_blank">GitHub</a>
+            <a id="linkedin" href="" target="_blank">LinkedIn</a> | 
+            <a id="github" href="" target="_blank">GitHub</a>
         </p>
     </footer>
 
-    
-    <!-- Include the translator JavaScript -->
+    <script src="data.js"></script>
     <script src="translator.js"></script>
+    <script src="populate.js"></script>
 </body>
 </html>
