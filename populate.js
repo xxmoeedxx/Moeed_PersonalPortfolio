@@ -74,6 +74,7 @@ function populateNavLinks() {
             document.getElementById('email').textContent = data.contact.email;
             document.getElementById('email').href = `mailto:${data.contact.email}`;
             document.getElementById('phone').textContent = data.contact.phone;
+            document.getElementById('phone').href = `tel:${data.contact.phone}`;
             document.getElementById('linkedin').href = data.contact.socials.linkedin;
             document.getElementById('github').href = data.contact.socials.github;
         }
