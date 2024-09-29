@@ -4,15 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #cacccf;
     color: #2e3d49;
     line-height: 1.6;
-    padding: 0 1rem;
 }
-
+section::before {
+    content: '';
+    display: block;
+    height: 200px; /* Same as the navbar height */
+    margin-top: -120px; /* Negative value of the height */
+    visibility: hidden; /* Keep it invisible */
+}
 /* Consistent section styling */
 section {
     padding: 3rem 0; /* Consistent padding between sections */
@@ -37,21 +45,19 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
     align-items: center;
     text-align: center;
 }
 
 nav ul li {
     flex: 1 1 33.33%;
-    margin: 0.5rem 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
     display: block;
 }
@@ -61,18 +67,15 @@ nav ul li a:hover {
 }
 
 #language-selector {
-    margin-top: 1rem;
     background-color: #fff;
     color: #333;
-    padding: 0.5rem;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    width: 100%;
 }
 
 /* Add padding to the top of sections to compensate for the fixed nav bar */
-header, #home, #skills, #projects, #certifications, #education, #contact {
+header, #skills, #projects, #certifications, #education, #contact {
     padding-top: 120px;
 }
 
@@ -88,20 +91,20 @@ header {
 
 #home {
     color: #1f2933;
-    padding: 15rem 1rem 0rem 1rem;
+    padding: 8rem 1rem 0rem 1rem;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 #home h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 1.5px;
     margin-bottom: 1rem;
 }
 
 #home p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-bottom: 1.5rem;
 }
 
@@ -280,6 +283,9 @@ footer a:hover {
     nav ul li {
         flex: none;
         margin: 0 15px;
+    }
+    nav ul li a {
+        font-size: 1.5rem;
     }
 
     #language-selector {
